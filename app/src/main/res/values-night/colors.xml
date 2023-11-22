@@ -7,12 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="tint">#FFFFFFFF</color>
+    <color name="tint">#FF000000</color>
 
-    <color name="zero_blue">#ECF4D6</color>
-    <color name="primary_blue">#9AD0C2</color>
-    <color name="secondary_blue">#2D9596</color>
-    <color name="darkest_blue">#265073</color>
+    <color name="zero_blue">#00ADB5</color>
+    <color name="primary_blue">#1D232A</color>
+    <color name="secondary_blue">#313E46</color>
+    <color name="darkest_blue">#222831</color>
 
     <color name="download">#00897B</color>
     <color name="delete">#E53935</color>

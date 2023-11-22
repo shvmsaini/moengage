@@ -3,19 +3,18 @@ package io.github.shvmsaini.moengage.services
 import androidx.lifecycle.MutableLiveData
 import io.github.shvmsaini.moengage.models.ArticleItem
 import io.github.shvmsaini.moengage.models.Source
-import io.github.shvmsaini.moengage.utils.HttpHandler
-import org.json.JSONArray
+import io.github.shvmsaini.moengage.utils.MyHttpHandler
 import org.json.JSONObject
 
 class ArticleItemFetchingService {
-    private val httpHandler = HttpHandler()
+    private val myHttpHandler = MyHttpHandler()
     val list : MutableLiveData<ArrayList<ArticleItem>?>
         get() {
             val itemList = MutableLiveData<ArrayList<ArticleItem>?>()
 
             Thread {
                 val tempList = ArrayList<ArticleItem>()
-                val response = httpHandler.makeServiceCall(BASE_URL)?.let { JSONObject(it) }
+                val response = myHttpHandler.makeServiceCall(BASE_URL)?.let { JSONObject(it) }
                 if (response?.has("articles") == true) {
                     val arr = response.getJSONArray("articles")
                     for (i in 0 until arr.length()) {

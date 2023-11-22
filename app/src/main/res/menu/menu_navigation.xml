@@ -2,9 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/sort"
-        android:icon="@drawable/baseline_sort_24"
-        android:iconTint="@color/white"
-        android:contentDescription="Sort Button"
-        app:showAsAction="always" />
+        android:id="@+id/sortAscending"
+        android:icon="@drawable/baseline_sort_by_alpha_24"
+        android:iconTint="@color/black"
+        android:contentDescription="@string/sort_button"
+        app:showAsAction="collapseActionView"
+        android:title="@string/sort_ascending" />
+    <item
+        android:id="@+id/sortDescending"
+        android:icon="@drawable/baseline_sort_by_alpha_24"
+        android:iconTint="@color/black"
+        android:contentDescription="@string/sort_button"
+        app:showAsAction="collapseActionView"
+        android:title="@string/sort_descending" />
 </menu>
